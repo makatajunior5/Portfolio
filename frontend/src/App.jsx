@@ -3,7 +3,8 @@ import "./App.css";
 import AdminDashboard from "./AdminDashboard";
 import "./AdminDashboard.css";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:4000";
+const API_BASE =
+  import.meta.env.VITE_API_BASE === undefined ? "http://localhost:4000" : import.meta.env.VITE_API_BASE;
 
 function Section({ title, id, delay = 0, children }) {
   return (

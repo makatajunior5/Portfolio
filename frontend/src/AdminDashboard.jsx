@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:4000";
+const API_BASE =
+  import.meta.env.VITE_API_BASE === undefined ? "http://localhost:4000" : import.meta.env.VITE_API_BASE;
 
 function pretty(value) {
   return JSON.stringify(value, null, 2);
