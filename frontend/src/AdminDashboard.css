@@ -1,0 +1,135 @@
+.admin-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  color: #dbe4f5;
+}
+
+.auth-card {
+  max-width: 720px;
+  margin: 4rem auto 0;
+}
+
+.admin-header h1 {
+  margin-bottom: 0.35rem;
+}
+
+.admin-header p {
+  margin-top: 0;
+  color: #9fb4d4;
+}
+
+.admin-card {
+  background: #0f172a;
+  border: 1px solid #2d3f5f;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+.admin-list {
+  max-height: 560px;
+  overflow: auto;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.admin-list-item {
+  border: 1px solid #324868;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #0b1528;
+}
+
+.admin-list-item pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.85rem;
+  color: #cddaf1;
+}
+
+.admin-page input,
+.admin-page select,
+.admin-page textarea {
+  width: 100%;
+  background: #08101f;
+  color: #e2e8f0;
+  border: 1px solid #2a3f5d;
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.admin-page textarea {
+  resize: vertical;
+}
+
+.admin-page button,
+.admin-page a {
+  border: 1px solid #3a5f96;
+  color: #dbeafe;
+  background: #1d4ed8;
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.admin-page button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.admin-page button:hover,
+.admin-page a:hover {
+  background: #2563eb;
+}
+
+.admin-page .danger {
+  background: #b91c1c;
+  border-color: #ef4444;
+}
+
+.admin-message {
+  color: #86efac;
+}
+
+.admin-error {
+  color: #fca5a5;
+}
+
+.admin-fields {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.admin-field {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.admin-field span {
+  color: #b8cae6;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}

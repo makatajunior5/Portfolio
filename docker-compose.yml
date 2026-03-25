@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+      - ADMIN_KEY=${ADMIN_KEY:-admin123}
+    volumes:
+      # Persistance des modifications faites via le dashboard admin
+      - ./backend/src/portfolioData.json:/app/src/portfolioData.json
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # URL de l'API vue depuis le conteneur (service docker compose)
+        # Le navigateur doit appeler une adresse accessible depuis l'hote.
+        VITE_API_BASE: http://localhost:4000
+    ports:
+      # On garde le même port "habitude" que ton dev Vite
+      - "5173:80"
+    depends_on:
+      - backend

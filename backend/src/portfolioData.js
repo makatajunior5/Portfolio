@@ -1,0 +1,141 @@
+const portfolioData = {
+  basics: {
+    name: "Makata Jean Junior",
+    role: "DevOps Engineer - en alternance",
+    location: "Beauchamp, France",
+    phone: "07 59 63 29 04",
+    email: "makatajunior5@gmail.com",
+    github: "https://github.com/makatajunior5",
+    tagline:
+      "Developpeur Full-Stack en transition vers le DevOps, passionne par l'automatisation, la conteneurisation et l'Infrastructure as Code.",
+    summary:
+      "Je developpe des projets integrant CI/CD, Docker, monitoring et deploiement Linux. Je recherche une alternance DevOps pour contribuer a l'industrialisation des deploiements et a la fiabilite des infrastructures cloud.",
+    availability:
+      "Disponible immediatement pour une alternance DevOps (rythme : 3 semaines entreprise / 1 semaine ecole).",
+  },
+  skills: [
+    {
+      category: "DevOps & Cloud",
+      items: [
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "Helm",
+        "Terraform",
+        "AWS",
+        "Harbor",
+      ],
+    },
+    {
+      category: "CI/CD",
+      items: ["Git", "GitHub Actions", "GitLab CI/CD"],
+    },
+    {
+      category: "Systemes",
+      items: ["Linux", "Nginx", "Ubuntu", "Debian", "Bash"],
+    },
+    {
+      category: "Monitoring",
+      items: ["Prometheus", "Grafana", "ELK Stack"],
+    },
+    {
+      category: "Developpement",
+      items: ["Node.js", "Java", "Spring Boot", "Python", "Django", "JavaScript"],
+    },
+    {
+      category: "Bases de donnees",
+      items: ["MySQL", "PostgreSQL", "MongoDB"],
+    },
+  ],
+  projects: [
+    {
+      title: "TheTipTop - Plateforme de jeu concours",
+      description: "Mise en place d'un workflow DevOps complet.",
+      link: "https://github.com/thetiptopprojectgroup-netizen/thetiptop-project",
+      highlights: [
+        "Pipeline CI/CD automatise (build, test, deploiement)",
+        "Conteneurisation frontend/backend/base de donnees",
+        "Deploiement VPS avec Nginx reverse proxy",
+        "Monitoring Prometheus + Grafana",
+      ],
+    },
+    {
+      title: "Migration application monolithique",
+      description:
+        "Decoupage de l'application en microservices et industrialisation du deploiement.",
+      highlights: [
+        "Docker Compose pour l'orchestration locale",
+        "Strategies de scaling et load balancing",
+        "Documentation technique et guides de deploiement",
+      ],
+    },
+  ],
+  experience: [
+    {
+      role: "Webmaster",
+      company: "Dynamic Easy Company Sarl",
+      period: "Fev 2023 - Nov 2024",
+      achievements: [
+        "Creation et maintenance de sites vitrines et e-commerce",
+        "Optimisation SEO et performances UX/UI (+40% de trafic)",
+        "Maintenance technique et resolution d'incidents de production",
+      ],
+    },
+    {
+      role: "Stagiaire Developpeur Full-Stack",
+      company: "Astor Digitech",
+      period: "Jan 2021 - Juil 2021",
+      achievements: [
+        "Developpement d'API REST avec Node.js et Express",
+        "Conception et optimisation de bases SQL",
+        "Mise en place d'un pipeline CI/CD avec GitLab CI",
+        "Scripts Shell pour l'automatisation des deploiements",
+      ],
+    },
+    {
+      role: "Stagiaire Developpeur",
+      company: "RW KING",
+      period: "Fev 2019 - Sept 2019",
+      achievements: [
+        "Developpement d'applications web avec PHP et JavaScript",
+        "Participation aux choix techniques et mises en production",
+        "Tests, debogage et amelioration de la stabilite applicative",
+      ],
+    },
+  ],
+  education: [
+    {
+      degree: "Mastre Expert en Strategie et Transformation Digitale",
+      school: "DSP Paris, France",
+      period: "2025 - 2026",
+    },
+    {
+      degree: "Master Ingenieur en Systemes d'Information",
+      school: "IUG Douala, Cameroun",
+      period: "2022 - 2023",
+    },
+    {
+      degree: "Licence Professionnelle en Genie Logiciel",
+      school: "IUC Douala, Cameroun",
+      period: "2020 - 2021",
+    },
+  ],
+  certifications: [
+    "AWS Cloud Practitioner (en cours)",
+    "Docker Certified Associate (en cours)",
+    "Linux Foundation (en cours)",
+    "Kubernetes CKA/CKAD (en cours)",
+  ],
+  languages: ["Francais (courant)", "Anglais (technique)"],
+  softSkills: [
+    "Autonome",
+    "Esprit d'equipe",
+    "Curieux",
+    "Capacite d'adaptation",
+    "Sens de l'organisation",
+    "Resolution de problemes",
+  ],
+  interests: ["Veille technologique (DevOps, Cloud)", "Open Source", "Running", "Musique"],
+};
+
+module.exports = portfolioData;
